@@ -1,13 +1,15 @@
 <template>
 <div class="sidebar">
     <h2>Barra lateral</h2>
-    <RouterLink to="/contador">Contador</RouterLink>
-    <RouterLink to="/lista-de-tareas">Lista de Tareas</RouterLink>
+    <ul>
+        <li><RouterLink to="/contador">Contador</RouterLink></li>
+        <li><RouterLink to="/lista-de-tareas">Lista de Tareas</RouterLink></li>
+    </ul>
 </div>
 </template>
 
 <script setup>
-
+    
 </script>
 
 <style>
