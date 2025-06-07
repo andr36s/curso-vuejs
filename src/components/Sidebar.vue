@@ -2,6 +2,7 @@
 <div class="sidebar">
     <h2>Barra lateral</h2>
     <ul>
+        <li><RouterLink to="/registrar">Registrar</RouterLink></li>
         <li><RouterLink to="/contador">Contador</RouterLink></li>
         <li><RouterLink to="/lista-de-tareas">Lista de Tareas</RouterLink></li>
     </ul>
