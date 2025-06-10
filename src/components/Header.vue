@@ -1,11 +1,11 @@
 <template>
      <div class="header">
-        <h3>La temperatura actual es: </h3>
+        <h3>La temperatura actual es: <Weather></Weather></h3>
      </div>
 </template>
 
 <script setup>
-
+import Weather from '@/components/Weather.vue';
 </script>
 
 <style scoped>
