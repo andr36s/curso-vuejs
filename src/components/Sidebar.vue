@@ -13,11 +13,18 @@
 
 <script setup>
 import { useRegistrarStore } from '@/modules/registro/stores/registrarStore';
-import { ref } from 'vue';
+import { ref, watch } from 'vue';
 
 const registrarStore = useRegistrarStore();
 const nombre = ref(registrarStore.nombre)
 const correo = ref(registrarStore.correo)
+
+watch(() => registrarStore.nombre, (newNombre) => {
+    nombre.value = newNombre;
+});
+watch(() => registrarStore.correo, (newCorreo) => {
+    correo.value = newCorreo;
+})
 
 </script>
 
