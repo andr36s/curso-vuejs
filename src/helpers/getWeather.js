@@ -1,11 +1,11 @@
 import axios from 'axios';
 
-const API_URL = 'https://api.open-meteo.com/v1/forecast?latitude=6.2518&longitude=-75.5636&hourly=temperature_2m&timezone=auto';
+const API_URL = 'https://api.open-meteo.com/v1/forecast?latitude=6.2518&longitude=-75.5636&current=temperature_2m&timezone=auto&forecast_days=1';
 
 export const getTemperatura = async () => {
     try {
         const respuesta = await axios.get(API_URL);
-        const nuevaTemperatura = respuesta.data.hourly.temperature_2m[0];
+        const nuevaTemperatura = respuesta.data.current.temperature_2m;
 
         if (respuesta.status != 200) {
             return console.log('Error al obtener la temperatura:', respuesta.status); // Manejar el error si la respuesta no es exitosa            
