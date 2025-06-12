@@ -1,6 +1,6 @@
 <template>
 <div class="header">
-    <Header></Header>
+    <Header :mensaje="texto"></Header>
 </div>
 <div class="container">
     <Sidebar></Sidebar>
