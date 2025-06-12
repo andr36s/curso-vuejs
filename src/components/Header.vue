@@ -6,6 +6,10 @@
 
 <script setup>
 import Weather from '@/components/Weather.vue';
+import { defineProps, vue } from 'vue';
+
+const props = defineProps(['mensaje']);
+
 </script>
 
 <style scoped>
@@ -14,7 +18,7 @@ import Weather from '@/components/Weather.vue';
     justify-content: center;
     align-items: center;
     padding: 10px 20px;
-    position: fixed;
+    /* position: fixed; */
     top: 0;
     right: 0;
     left: 0;
