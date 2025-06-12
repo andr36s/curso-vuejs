@@ -1,14 +1,15 @@
 <template>
      <div class="header">
-        <Weather></Weather>
+        {{ mensajeRecibido }}<Weather></Weather>
      </div>
 </template>
 
 <script setup>
 import Weather from '@/components/Weather.vue';
-import { defineProps, vue } from 'vue';
+import { defineProps, ref } from 'vue';
 
 const props = defineProps(['mensaje']);
+const mensajeRecibido = ref(props.mensaje || 'Mensaje por defecto')
 
 </script>
 
