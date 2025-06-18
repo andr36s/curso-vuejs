@@ -7,6 +7,7 @@
         <li><RouterLink to="/registrar">Registrar</RouterLink></li>
         <li><RouterLink to="/contador">Contador</RouterLink></li>
         <li><RouterLink to="/lista-de-tareas">Lista de Tareas</RouterLink></li>
+        <li><RouterLink to="/calcular">Calcular</RouterLink></li>
     </ul>
 </div>
 </template>
